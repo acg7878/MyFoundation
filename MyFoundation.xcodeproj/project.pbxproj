@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1174588B94A824D792B78341 /* Pods_MyFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9060D1795B4792954B8B749 /* Pods_MyFoundation.framework */; };
 		65F4379B2F20F8320077EFA9 /* MyFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F437912F20F8320077EFA9 /* MyFoundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,8 +22,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36AF55B6082A66E5B5A0E32F /* Pods-MyFoundation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFoundation.debug.xcconfig"; path = "Target Support Files/Pods-MyFoundation/Pods-MyFoundation.debug.xcconfig"; sourceTree = "<group>"; };
+		5C2701333D88CFACF22C52FA /* Pods-MyFoundation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFoundation.release.xcconfig"; path = "Target Support Files/Pods-MyFoundation/Pods-MyFoundation.release.xcconfig"; sourceTree = "<group>"; };
 		65F437912F20F8320077EFA9 /* MyFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F4379A2F20F8320077EFA9 /* MyFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9060D1795B4792954B8B749 /* Pods_MyFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -46,6 +50,8 @@
 		};
 		65F4379E2F20F8320077EFA9 /* MyFoundationTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = MyFoundationTests;
 			sourceTree = "<group>";
 		};
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1174588B94A824D792B78341 /* Pods_MyFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +83,8 @@
 				65F437932F20F8320077EFA9 /* MyFoundation */,
 				65F4379E2F20F8320077EFA9 /* MyFoundationTests */,
 				65F437922F20F8320077EFA9 /* Products */,
+				76D88DEA991C84D641CFE74E /* Pods */,
+				F5A7AB1CEDD69C4BA2A17577 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +95,24 @@
 				65F4379A2F20F8320077EFA9 /* MyFoundationTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		76D88DEA991C84D641CFE74E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				36AF55B6082A66E5B5A0E32F /* Pods-MyFoundation.debug.xcconfig */,
+				5C2701333D88CFACF22C52FA /* Pods-MyFoundation.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F5A7AB1CEDD69C4BA2A17577 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9060D1795B4792954B8B749 /* Pods_MyFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +132,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65F437A22F20F8320077EFA9 /* Build configuration list for PBXNativeTarget "MyFoundation" */;
 			buildPhases = (
+				E2B34D86BE4FA0C2D780B787 /* [CP] Check Pods Manifest.lock */,
 				65F4378C2F20F8320077EFA9 /* Headers */,
 				65F4378D2F20F8320077EFA9 /* Sources */,
 				65F4378E2F20F8320077EFA9 /* Frameworks */,
@@ -118,8 +146,6 @@
 				65F437932F20F8320077EFA9 /* MyFoundation */,
 			);
 			name = MyFoundation;
-			packageProductDependencies = (
-			);
 			productName = MyFoundation;
 			productReference = 65F437912F20F8320077EFA9 /* MyFoundation.framework */;
 			productType = "com.apple.product-type.framework";
@@ -141,8 +167,6 @@
 				65F4379E2F20F8320077EFA9 /* MyFoundationTests */,
 			);
 			name = MyFoundationTests;
-			packageProductDependencies = (
-			);
 			productName = MyFoundationTests;
 			productReference = 65F4379A2F20F8320077EFA9 /* MyFoundationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -201,6 +225,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E2B34D86BE4FA0C2D780B787 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyFoundation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		65F4378D2F20F8320077EFA9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -229,6 +278,7 @@
 /* Begin XCBuildConfiguration section */
 		65F437A32F20F8320077EFA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36AF55B6082A66E5B5A0E32F /* Pods-MyFoundation.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -260,6 +310,7 @@
 		};
 		65F437A42F20F8320077EFA9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C2701333D88CFACF22C52FA /* Pods-MyFoundation.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
