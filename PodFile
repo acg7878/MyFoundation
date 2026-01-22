@@ -6,6 +6,10 @@ target 'MyFoundation' do
   pod 'YYModel'
 end
 
+target 'MyFoundationTests' do
+  inherit! :search_paths
+end
+
 # 强制所有 Pod 依赖的 target 的最低部署版本为14
 post_install do |installer|
   installer.pods_project.targets.each do |target|

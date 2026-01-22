@@ -50,8 +50,6 @@
 		};
 		65F4379E2F20F8320077EFA9 /* MyFoundationTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = MyFoundationTests;
 			sourceTree = "<group>";
 		};
@@ -103,7 +101,6 @@
 				36AF55B6082A66E5B5A0E32F /* Pods-MyFoundation.debug.xcconfig */,
 				5C2701333D88CFACF22C52FA /* Pods-MyFoundation.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -182,6 +179,7 @@
 				TargetAttributes = {
 					65F437902F20F8320077EFA9 = {
 						CreatedOnToolsVersion = 26.2;
+						LastSwiftMigration = 2620;
 					};
 					65F437992F20F8320077EFA9 = {
 						CreatedOnToolsVersion = 26.2;
@@ -280,6 +278,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 36AF55B6082A66E5B5A0E32F /* Pods-MyFoundation.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -304,6 +303,8 @@
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -312,6 +313,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5C2701333D88CFACF22C52FA /* Pods-MyFoundation.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -336,6 +338,7 @@
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
